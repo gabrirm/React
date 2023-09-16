@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-undef */
+import { useParams } from "react-router-dom";
 import styles from "./City.module.css";
 
 const formatDate = (date) =>
@@ -5,10 +7,18 @@ const formatDate = (date) =>
     day: "numeric",
     month: "long",
     year: "numeric",
-    weekday: "long",
   }).format(new Date(date));
-
+const flagemojiToPNG = (flag) => {
+  var countryCode = Array.from(flag, (codeUnit) => codeUnit.codePointAt())
+    .map((char) => String.fromCharCode(char - 127397).toLowerCase())
+    .join("");
+  return (
+    <img src={`https://flagcdn.com/24x18/${countryCode}.png`} alt="flag" />
+  );
+};
 function City() {
+  const {id} = useParams()
+
   // TEMP DATA
   const currentCity = {
     cityName: "Lisbon",
@@ -24,7 +34,7 @@ function City() {
       <div className={styles.row}>
         <h6>City name</h6>
         <h3>
-          <span>{emoji}</span> {cityName}
+          <span>{flagemojiToPNG(emoji)}</span> {cityName}
         </h3>
       </div>
 
@@ -52,7 +62,7 @@ function City() {
       </div>
 
       <div>
-        <ButtonBack />
+        {/* <ButtonBack /> */}
       </div>
     </div>
   );
