@@ -1,0 +1,1 @@
+Posts application built with the aim to learn the Context API
