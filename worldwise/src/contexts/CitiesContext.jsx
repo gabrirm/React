@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useReducer } from "react";
-import { useContext } from "react";
+import { useContext, useCallback } from "react";
 
 import { createContext } from "react";
 
@@ -61,7 +61,7 @@ function CitiesProvider({ children }) {
     }
     fetchData();
   }, []);
-  async function getCity(id) {
+  const getCity = useCallback(async function getCity(id) {
     if (Number(id) === currentCity.id) return;
     dispatch({ type: "loading" });
     try {
@@ -71,7 +71,7 @@ function CitiesProvider({ children }) {
     } catch (err) {
       dispatch({ type: "rejected", payload: err.message });
     }
-  }
+  }, [currentCity.id]);
   async function createCity(newCity) {
     dispatch({ type: "loading" });
     try {
