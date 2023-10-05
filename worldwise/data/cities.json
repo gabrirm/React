@@ -35,6 +35,42 @@
         "lng": "-0.7443237304687501"
       },
       "id": 73930386
+    },
+    {
+      "cityName": "Pinto",
+      "country": "Spain",
+      "date": "2023-09-23T09:40:16.898Z",
+      "notes": "fui a la warner con chely",
+      "emoji": "🇪🇸",
+      "position": {
+        "lat": "40.24727576598792",
+        "lng": "-3.6937383810418427"
+      },
+      "id": 73930387
+    },
+    {
+      "cityName": "Tomar",
+      "country": "Portugal",
+      "date": "2023-09-23T09:40:51.861Z",
+      "notes": "hoal\n",
+      "emoji": "🇵🇹",
+      "position": {
+        "lat": "39.5735303370135",
+        "lng": "-8.317080169059862"
+      },
+      "id": 73930388
+    },
+    {
+      "cityName": "Oliva de la Frontera",
+      "country": "Spain",
+      "date": "2023-09-23T09:42:38.874Z",
+      "notes": "pueblo de lady chely",
+      "emoji": "🇪🇸",
+      "position": {
+        "lat": "38.275816053796746",
+        "lng": "-6.9181413942147945"
+      },
+      "id": 73930389
     }
   ]
 }
