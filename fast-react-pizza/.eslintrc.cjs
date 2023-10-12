@@ -17,6 +17,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "react/prop-types": 0,
-    "css.lint.unknownAtRules": "ignore",
+    "css.lint.unknownAtRules": 0,
   },
 };
