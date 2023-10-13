@@ -18,5 +18,6 @@ module.exports = {
     ],
     "react/prop-types": 0,
     "css.lint.unknownAtRules": 0,
+    "react-refresh/only-export-components": 0,
   },
 };
