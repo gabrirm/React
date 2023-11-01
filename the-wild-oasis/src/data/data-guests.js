@@ -3,7 +3,7 @@
 export const guests = [
   {
     // id: 1000,
-    fullName: 'Jonas Schmedtmann',
+    fullName: 'Pol Mortensen',
     email: 'hello@jonas.io',
     nationality: 'Portugal',
     nationalID: '3525436345',
